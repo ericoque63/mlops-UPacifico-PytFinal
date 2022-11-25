@@ -21,7 +21,7 @@ def home():
 @app.route('/predict',methods=['POST','GET'])
 def GetValues():
 
-    pregnancies = request.form.get('pregnancies')
+    pregnancies = request.form.get('pregnanciess')
     plasmaglucose = request.form.get('plasmaglucose')
     diastolicbloodpressure = request.form.get('diastolicbloodpressure')
     tricepsthickness = request.form.get('tricepsthickness')
