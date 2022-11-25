@@ -21,7 +21,7 @@ def home():
 @app.route('/predict',methods=['POST','GET'])
 def GetValues():
 
-    pregnancies = request.form.get('pregnanciess')
+    pregnanciess = request.form.get('pregnancies')
     plasmaglucose = request.form.get('plasmaglucose')
     diastolicbloodpressure = request.form.get('diastolicbloodpressure')
     tricepsthickness = request.form.get('tricepsthickness')
@@ -32,7 +32,7 @@ def GetValues():
     
     data_json = []
     val = []
-    val.append(pregnancies)
+    val.append(pregnanciess)
     val.append(plasmaglucose)
     val.append(diastolicbloodpressure)
     val.append(tricepsthickness)
